@@ -12,7 +12,10 @@ Route::resource('clientes', ClienteWebController::class)->names([
     'index' => 'clientes.index',
     'create' => 'clientes.create',
     'store' => 'clientes.store',
-    // Puedes añadir 'show', 'edit', 'update', 'destroy' si implementas esos métodos en ClienteWebController
+    'show' => 'clientes.show', // Asegúrate de que esta esté definida
+    'edit' => 'clientes.edit',   // Asegúrate de que esta esté definida
+    'update' => 'clientes.update', // ¡Importante! Esta es la que usa el formulario
+    'destroy' => 'clientes.destroy',
 ]);
 
 // Route::view('/clientes/crear', 'clientes.create');
