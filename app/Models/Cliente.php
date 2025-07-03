@@ -5,6 +5,28 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory; // Necesario para usar las fábricas de modelos
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * 
+ *
+ * @property int $id
+ * @property string $nombre
+ * @property string $dni
+ * @property string $email
+ * @property string|null $telefono
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereDni($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereNombre($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereTelefono($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Cliente whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class Cliente extends Model
 {
     use HasFactory; // Permite usar Cliente::factory()->create() para datos de prueba

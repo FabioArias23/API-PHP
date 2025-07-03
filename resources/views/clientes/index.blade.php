@@ -18,10 +18,13 @@
     @endif
 
     {{-- Botón para ir a crear un cliente --}}
-    <div class="mb-4">
+    <div class="mb-4 flex space-x-4">
         <a href="{{ route('clientes.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
             Crear Nuevo Cliente
         </a>
+         <a href="{{ route('users.index') }}" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-200">
+                Volver a Usuarios
+            </a>
     </div>
 
     @if ($clientes->isEmpty())
